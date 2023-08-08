@@ -1,0 +1,84 @@
+@import '../mixins.scss';
+
+.container {
+	width: 320px;
+	height: auto;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container .song-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px
+}
+
+.ariana {
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.duration {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.duration p {
+	font-size: 10px;
+}
+
+.progress-bar {
+	position: relative;
+  	width: 90%;
+  	height: 5px; 
+  	background-color: #979191; 
+  	border-radius: 5px;
+	padding: 0 30px; 
+}
+
+.round {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  width: 10px; 
+  height: 10px; 
+  background-color: #2d2e2e; 
+  border-radius: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.play-buttons {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	padding: 20px;
+}
+
+.play-buttons i {
+	color: #4b4b4b;
+	font-size: 1.5em;
+}
+
+.play-round {
+	width: 50px;
+	height: 50px;
+	background-color: #4b4b4b;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.play-round i {
+	color: #fff;
+	font-size: 20px;
+}
